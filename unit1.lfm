@@ -1,0 +1,122 @@
+object Form1: TForm1
+  Left = 527
+  Height = 787
+  Top = 129
+  Width = 904
+  Caption = 'Select files by CWE numbers from Samate-dataset'
+  ClientHeight = 787
+  ClientWidth = 904
+  DesignTimePPI = 144
+  OnCreate = FormCreate
+  LCLVersion = '2.0.6.0'
+  object Label1: TLabel
+    Left = 35
+    Height = 25
+    Top = 8
+    Width = 396
+    Caption = 'List of CWE-numbers to select (comma separated)'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 37
+    Height = 33
+    Top = 41
+    Width = 667
+    TabOrder = 0
+    Text = '79,89'
+  end
+  object Label2: TLabel
+    Left = 35
+    Height = 25
+    Top = 184
+    Width = 265
+    Caption = 'Folder for selected files (output): .'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 37
+    Height = 38
+    Top = 320
+    Width = 851
+    Caption = 'Select files with matching CWE number'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Label4: TLabel
+    Left = 35
+    Height = 25
+    Top = 376
+    Width = 102
+    Caption = 'Selected files'
+    ParentColor = False
+  end
+  object ListBox1: TListBox
+    Left = 32
+    Height = 336
+    Top = 416
+    Width = 856
+    ItemHeight = 0
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 38
+    Height = 38
+    Top = 224
+    Width = 195
+    Caption = 'Select output folder'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+  object Label3: TLabel
+    Left = 35
+    Height = 25
+    Top = 83
+    Width = 257
+    Caption = 'Folder with Samate files (input): .'
+    ParentColor = False
+  end
+  object Button3: TButton
+    Left = 36
+    Height = 38
+    Top = 120
+    Width = 196
+    Caption = 'Select input folder'
+    OnClick = Button3Click
+    TabOrder = 4
+  end
+  object Label5: TLabel
+    Left = 34
+    Height = 25
+    Top = 758
+    Width = 142
+    Caption = 'Number of files: 0'
+    ParentColor = False
+  end
+  object CheckBox1: TCheckBox
+    Left = 40
+    Height = 29
+    Top = 272
+    Width = 258
+    Caption = 'Sort safe and unsafe variants'
+    TabOrder = 5
+  end
+  object CheckBox2: TCheckBox
+    Left = 720
+    Height = 29
+    Top = 41
+    Width = 170
+    Caption = 'Any CWE number'
+    OnClick = CheckBox2Click
+    TabOrder = 6
+  end
+  object SelectDirectoryDialog1: TSelectDirectoryDialog
+    FileName = 'C:\Users\Docent\Desktop\ou\grad\laz\laz select CWE'
+    InitialDir = 'C:\Users\Docent\Desktop\ou\grad\laz\'
+    left = 528
+    top = 216
+  end
+  object SelectDirectoryDialog2: TSelectDirectoryDialog
+    left = 536
+    top = 128
+  end
+end
